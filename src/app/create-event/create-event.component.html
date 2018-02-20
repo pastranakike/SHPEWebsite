@@ -1,0 +1,52 @@
+<div class="ui standard test modal transition" style="margin-top: -216.453px; display: block !important;" [class.hidden]="!show">
+    <div class="header">
+      Create New Event
+    </div>
+    <div class="image content">
+      <div class="ui medium image">
+          <agm-map [latitude]="lat" [longitude]="lng">
+              <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+            </agm-map>
+      </div>
+      <div class="description">
+        <form class="ui form">
+          <div class="fields">
+            <div class="twelve wide field">
+              <label>Name of the Event</label>
+              <input type="text" name="name" [(ngModel)]="name">
+            </div>
+            <div class="four wide field">
+              <label>Duration</label>
+              <input type="number" name="duration" [(ngModel)]="duration" placeholder="In minutes">
+            </div>
+          </div>
+            <div class="field">
+                <label>Description of the Event</label>
+                <textarea [(ngModel)]="description" name="description"></textarea>
+              </div>
+            <div class="field">
+            </div>
+            <div class="more-info">
+              <div class="ui input" style="display:flex;flex-direction:row;width:100%">
+                <input type="text" style="flex:4; margin-right:5px" placeholder="Add tags divided by comma." name="tags" [(ngModel)]="tags">
+                <input type="date" style="flex:1; width: 200px; flex-shrink:0; margin-right:5px" name="date" [(ngModel)]="date">
+                <input type="time" style="flex:1; width: 100px; flex-shrink:0" name="time" [(ngModel)]="time">
+              </div>
+          </div>
+          <div class="fields" style="margin-top:5px">
+              <input class="twelve wide field" type="text" name="imageURL" [(ngModel)]="imageURL" placeholder="Image URL" style="margin-right:5px">
+              <input class="four wide field" type="number" name="volunteersNeeded" [(ngModel)]="volunteersNeeded" placeholder="Volunteers needed">
+            </div>
+          </form>
+      </div>
+    </div>
+    <div class="actions">
+      <div class="ui black deny button" (click)="discard()">
+        Discard
+      </div>
+      <div class="ui positive right labeled icon button" (click)="sendEvent()">
+        Create event
+        <i class="checkmark icon"></i>
+      </div>
+    </div>
+  </div>

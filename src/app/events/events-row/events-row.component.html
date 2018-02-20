@@ -1,0 +1,8 @@
+<div>
+  <h1 class="title-cards" [class.title-change] = "small">{{title}}</h1>
+  <div class="cards-container">
+    <div class="cards">
+      <app-event-card *ngFor="let event of events" [event]="event" [small]="small" (update)="update"></app-event-card>
+    </div>
+  </div>
+</div>

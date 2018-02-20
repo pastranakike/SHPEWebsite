@@ -1,0 +1,22 @@
+
+<div class="ui container content-container" style="padding-bottom:20px; z-index:-1">
+  <div class="ui visible message position-home">
+    <div class="quote-box"><img [src]='currPic' *ngIf="currPic"></div>
+    <div class="dashboard-box">
+      <div class="usertab">
+          <div class="welcome" *ngIf="name">Welcome {{name}}</div>
+          <div class="info-user" *ngIf="handPicked">Today we have {{handPicked.length}} events catered to you</div>
+      </div>
+      <div class="button-panel">
+        <button class="ui inverted button" (click)="showPopup()" style="float:right;margin-top:5px;width:150px"><i class="add to calendar icon" style="margin-left:5px"></i></button>
+        <a class="ui inverted button" href="/profile" style="float:right;margin-top:5px;width:150px"><i class="user circle icon" style="margin-left:5px"></i></a>
+      </div>
+    </div>
+  </div>
+  <div style="color:black;margin:30px;font-size:20px;text-align:center">You are currently ranked above {{percentage}} percent of the community. {{percentage > 50 ? 'Keep it up!' : 'I\'m sure you can do better!'}}</div>
+  <app-events-row [events]="handPicked" title="Hand-picked for you" (update)="updateInfo()"></app-events-row>
+  <app-organizations-row [orgs]="orgs" title="Featured organizations" (update)="updateInfo()"></app-organizations-row>
+  <app-events-row [events]="upcoming" title="Upcoming events" (update)="updateInfo()"></app-events-row>
+  <app-events-row [events]="nearby" title="Nearby"></app-events-row>
+  <app-create-event (update)="updateInfo()"></app-create-event>
+</div>

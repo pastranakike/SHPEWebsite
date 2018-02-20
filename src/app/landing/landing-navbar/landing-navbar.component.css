@@ -1,0 +1,9 @@
+.ui.menu {
+    box-shadow: 0px 0px 5px #00000055;
+    height: 56px;
+}
+
+.white-font {
+    color: white !important;
+    font-weight: 700 !important;
+}

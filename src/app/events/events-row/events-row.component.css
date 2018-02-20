@@ -1,0 +1,28 @@
+.cards-container {
+    overflow-x: hidden;
+}
+
+.cards::-webkit-scrollbar {
+    height: 0px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.title-cards {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #FF9800;
+    text-transform: uppercase;
+}
+
+.title-cards.title-change {
+    margin-top: 10px; 
+}

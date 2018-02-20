@@ -1,0 +1,27 @@
+.kike-card {
+    background: transparent;
+    width: 250px;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+.ui.medium.circular.image {
+    box-shadow: 0px 2px 4px #00000022;
+    margin: auto;
+    flex: 2;
+    border-radius: 300rem !important;
+    width: 70%;
+    align-content: center;
+
+}
+
+.content {
+    margin-top: 10px !important;
+    margin: auto;
+    flex: 1;
+}
+
+.ui.card.transparent {
+    background: transparent !important; 
+}

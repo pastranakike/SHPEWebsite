@@ -1,0 +1,46 @@
+.image1 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.image2 {
+    position: absolute;
+    left: 450px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.image3 {
+    position: absolute;
+    left: 950px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 50px !important;
+    line-height: 30px;
+    margin-bottom: 0px !important;
+}
+
+.landing {
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-width: 700px;
+}
+
+.footer-orange {
+    position:absolute;
+    bottom: 0px;
+    width: 100vw;
+    background-color: #FF9800;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

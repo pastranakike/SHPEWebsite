@@ -1,0 +1,19 @@
+<div class="tech-container">
+  <div class="ui container content-container">
+    <h2 class="ui center aligned icon header">
+      <i class="settings icon"></i>
+      <div class="content">
+        Techonology
+      </div>
+    </h2>
+    <div class="ui icon message" *ngFor="let item of items">
+      <img class="ui avatar image" [src]='item.imageURL'>
+      <div class="content">
+        <div class="header">
+          {{item.name}}
+        </div>
+        <p>{{item.description}}<a *ngIf="item.link" [href]="item.link">{{item.link}}</a></p>
+      </div>
+    </div>
+  </div>
+</div>

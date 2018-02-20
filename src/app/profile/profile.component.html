@@ -1,0 +1,45 @@
+<div class="full-page">
+  <div class="profile">
+    <img class="ui medium circular image border-profile" [src]="profilePic">
+      <div class="info-container">
+        <div class="ui list">
+          <div class="item">
+            <i class="user icon"></i>
+            <div class="content">
+              {{name}}
+            </div>
+          </div>
+          <div class="item">
+            <i class="marker icon"></i>
+            <div class="content">
+              Gainsville, FL
+            </div>
+          </div>
+          <div class="item">
+            <i class="calendar icon"></i>
+            <div class="content">
+              Member since January 2017
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tags-box">
+          <span *ngFor="let tag of tags" class="ui label orange">{{tag}}</span>
+      </div>
+  </div>
+  <div class="wall">
+      <app-events-row [events]="eventsInterested" [title]="'MY EVENTS'" [small]="true" class="text-align" style="flex: 1; flex-shrink:0"></app-events-row>
+      <div class="past-event-container">
+        <h1 class="text-style">PAST EVENTS</h1>
+        <div class="event-container">
+          <div class="ui floating message" *ngFor="let event of pastEvents">
+              <div class="content">
+                  <div class="header">
+                    <p>{{event.name}}</p>
+                  </div>
+                  <p>{{event.description}}</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

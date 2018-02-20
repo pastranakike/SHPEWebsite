@@ -1,0 +1,16 @@
+agm-map {
+    height: 300px;
+}
+
+.description {
+    width: 100% !important;
+}
+
+.field {
+    height: 20% !important;
+}
+
+.more-info {
+    display: flex;
+    flex-direction: row;
+}

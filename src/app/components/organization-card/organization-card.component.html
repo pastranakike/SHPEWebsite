@@ -1,0 +1,20 @@
+<div class="kike-card">
+  <div class="ui medium circular image">
+    <img [src]="org.imageURL">
+  </div>
+  <div class="content">
+    <a class="header">{{org.name}}</a>
+    <div class="meta">
+      <span class="date">{{org.type}}</span>
+    </div>
+    <div class="description">
+      {{org.description}}
+    </div>
+  </div>
+  <div class="extra content">
+    <a style="font-size: 15px">
+      <i class="user icon"></i>
+      {{org.subscribers}}
+    </a>
+  </div>
+</div>
