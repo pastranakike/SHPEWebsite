@@ -1,0 +1,29 @@
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    line-height: 2rem;
+    margin-top: 20px;
+}
+
+.footer .ui.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
+
+.footer a:hover {
+    color: #ffe189;
+}
+
+.made-with-love {
+    font-size: 1rem;
+}

@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "ivoluntee"
+    "name": "GT SHPE"
   },
   "apps": [
     {
@@ -57,7 +57,7 @@
     "styleExt": "css",
     "component": {},
     "serve": {
-      "port": 3000
+      "port": 6969
     }
   }
 }

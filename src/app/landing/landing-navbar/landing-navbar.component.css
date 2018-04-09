@@ -7,3 +7,27 @@
     color: white !important;
     font-weight: 700 !important;
 }
+
+.ui.secondary.menu .item.navbar-link {
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid transparent;
+    border-radius: 0px;
+    padding: 1em .92857143em;
+    opacity: 0.8;
+}
+
+.ui.secondary.menu .item.navbar-link.active {
+    opacity: 1;
+    color: #ffe189 !important;
+}
+
+.ui.secondary.menu .item.navbar-link.active:hover {
+    opacity: 1;
+    border-bottom: 2px solid #ffe189 ;
+}
+
+.ui.secondary.menu .item.navbar-link:hover {
+    padding: 0.78em .92857143em;
+    border-bottom: 2px solid white;
+    opacity: 1;
+}
